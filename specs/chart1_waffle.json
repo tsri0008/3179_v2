@@ -1,0 +1,189 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle chart: of every 100 people counted in the 2021 Census, how many were born in Australia, born overseas, or did not state a birthplace.",
+  "width": 640,
+  "height": 300,
+  "data": {
+    "url": "data/chart1_waffle_born_overseas.csv"
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "waffle_squares_of_100",
+          "as": "cum"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    },
+    {
+      "calculate": "datum.cum - datum.waffle_squares_of_100",
+      "as": "start"
+    },
+    {
+      "calculate": "sequence(datum.start, datum.cum)",
+      "as": "square"
+    },
+    {
+      "flatten": [
+        "square"
+      ]
+    },
+    {
+      "calculate": "datum.square % 10",
+      "as": "col"
+    },
+    {
+      "calculate": "floor(datum.square / 10)",
+      "as": "row"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "col",
+          "type": "ordinal",
+          "axis": null,
+          "scale": {
+            "range": [
+              0,
+              300
+            ],
+            "paddingInner": 0.12,
+            "paddingOuter": 0
+          }
+        },
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "axis": null,
+          "scale": {
+            "range": [
+              0,
+              300
+            ],
+            "paddingInner": 0.12,
+            "paddingOuter": 0
+          }
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Born in Australia",
+              "Born overseas",
+              "Not stated / inadequately described"
+            ],
+            "range": [
+              "#C5CDD4",
+              "#E07B2D",
+              "#F1ECE2"
+            ]
+          },
+          "legend": {
+            "orient": "none",
+            "legendX": 330,
+            "legendY": 190,
+            "title": null,
+            "labelLimit": 230,
+            "rowPadding": 6
+          }
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.category == 'Not stated / inadequately described'",
+            "value": "#BFB5A2"
+          },
+          "value": "transparent"
+        },
+        "tooltip": [
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Group"
+          },
+          {
+            "field": "persons",
+            "type": "quantitative",
+            "title": "People (2021 Census)",
+            "format": ","
+          },
+          {
+            "field": "share_of_all_persons_pct",
+            "type": "quantitative",
+            "title": "Share of all residents (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "x": 330,
+        "y": 58,
+        "align": "left",
+        "baseline": "alphabetic",
+        "fontSize": 64,
+        "fontWeight": 700,
+        "color": "#E07B2D",
+        "text": "28"
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "x": 330,
+        "y": 84,
+        "align": "left",
+        "fontSize": 16,
+        "color": "#2B2A28",
+        "text": [
+          "in every 100 people living in Australia",
+          "were born overseas"
+        ],
+        "lineHeight": 20
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "x": 330,
+        "y": 132,
+        "align": "left",
+        "fontSize": 13,
+        "color": "#6B675E",
+        "text": [
+          "Each square = 1 in every 100 people.",
+          "The 5 pale squares did not state a birthplace."
+        ],
+        "lineHeight": 17
+      }
+    }
+  ]
+}
