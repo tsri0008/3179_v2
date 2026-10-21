@@ -1,0 +1,421 @@
+year,region,persons
+1947,Americas,2534
+1947,Asia,6346
+1947,Europe,32649
+1947,Middle East & North Africa,1128
+1947,Oceania,3586
+1947,Sub-Saharan Africa,326
+1948,Americas,2236
+1948,Asia,5506
+1948,Europe,100260
+1948,Middle East & North Africa,2465
+1948,Oceania,3879
+1948,Sub-Saharan Africa,472
+1949,Americas,1946
+1949,Asia,5725
+1949,Europe,169750
+1949,Middle East & North Africa,2364
+1949,Oceania,4446
+1949,Sub-Saharan Africa,658
+1950,Americas,2392
+1950,Asia,6354
+1950,Europe,136243
+1950,Middle East & North Africa,2913
+1950,Oceania,4602
+1950,Sub-Saharan Africa,786
+1951,Americas,1866
+1951,Asia,5963
+1951,Europe,115179
+1951,Middle East & North Africa,2318
+1951,Oceania,4357
+1951,Sub-Saharan Africa,779
+1952,Americas,1874
+1952,Asia,4455
+1952,Europe,84634
+1952,Middle East & North Africa,1243
+1952,Oceania,3118
+1952,Sub-Saharan Africa,566
+1953,Americas,2155
+1953,Asia,3513
+1953,Europe,74873
+1953,Middle East & North Africa,1438
+1953,Oceania,3916
+1953,Sub-Saharan Africa,573
+1954,Americas,2811
+1954,Asia,3558
+1954,Europe,110531
+1954,Middle East & North Africa,1865
+1954,Oceania,4587
+1954,Sub-Saharan Africa,828
+1955,Americas,3232
+1955,Asia,4617
+1955,Europe,115759
+1955,Middle East & North Africa,3364
+1955,Oceania,4985
+1955,Sub-Saharan Africa,671
+1956,Americas,3218
+1956,Asia,5690
+1956,Europe,102107
+1956,Middle East & North Africa,3634
+1956,Oceania,5008
+1956,Sub-Saharan Africa,944
+1957,Americas,3263
+1957,Asia,7579
+1957,Europe,88803
+1957,Middle East & North Africa,2664
+1957,Oceania,4830
+1957,Sub-Saharan Africa,839
+1958,Americas,4299
+1958,Asia,7542
+1958,Europe,94753
+1958,Middle East & North Africa,1177
+1958,Oceania,7713
+1958,Sub-Saharan Africa,1213
+1959,Americas,1268
+1959,Asia,1953
+1959,Europe,97498
+1959,Middle East & North Africa,1041
+1959,Oceania,2213
+1959,Sub-Saharan Africa,769
+1960,Americas,1627
+1960,Asia,2378
+1960,Europe,98601
+1960,Middle East & North Africa,1185
+1960,Oceania,2291
+1960,Sub-Saharan Africa,1992
+1961,Americas,1745
+1961,Asia,2592
+1961,Europe,76467
+1961,Middle East & North Africa,1038
+1961,Oceania,1911
+1961,Sub-Saharan Africa,1893
+1962,Americas,1844
+1962,Asia,3043
+1962,Europe,91053
+1962,Middle East & North Africa,2023
+1962,Oceania,2270
+1962,Sub-Saharan Africa,1392
+1963,Americas,2202
+1963,Asia,2909
+1963,Europe,109011
+1963,Middle East & North Africa,3017
+1963,Oceania,2935
+1963,Sub-Saharan Africa,1796
+1964,Americas,2898
+1964,Asia,2994
+1964,Europe,125402
+1964,Middle East & North Africa,2821
+1964,Oceania,3378
+1964,Sub-Saharan Africa,1828
+1965,Americas,3734
+1965,Asia,3722
+1965,Europe,127733
+1965,Middle East & North Africa,3485
+1965,Oceania,3208
+1965,Sub-Saharan Africa,1827
+1966,Americas,3691
+1966,Asia,4044
+1966,Europe,120778
+1966,Middle East & North Africa,3729
+1966,Oceania,3612
+1966,Sub-Saharan Africa,2061
+1967,Americas,4055
+1967,Asia,6104
+1967,Europe,113034
+1967,Middle East & North Africa,3595
+1967,Oceania,6446
+1967,Sub-Saharan Africa,3277
+1968,Americas,5264
+1968,Asia,8322
+1968,Europe,141930
+1968,Middle East & North Africa,7139
+1968,Oceania,7535
+1968,Sub-Saharan Africa,3761
+1969,Americas,7326
+1969,Asia,8890
+1969,Europe,147086
+1969,Middle East & North Africa,9585
+1969,Oceania,6805
+1969,Sub-Saharan Africa,3683
+1970,Americas,12462
+1970,Asia,9127
+1970,Europe,127174
+1970,Middle East & North Africa,9339
+1970,Oceania,6402
+1970,Sub-Saharan Africa,3919
+1971,Americas,12173
+1971,Asia,9098
+1971,Europe,94148
+1971,Middle East & North Africa,7083
+1971,Oceania,5369
+1971,Sub-Saharan Africa,3678
+1972,Americas,8625
+1972,Asia,7779
+1972,Europe,75893
+1972,Middle East & North Africa,6113
+1972,Oceania,5291
+1972,Sub-Saharan Africa,3049
+1973,Americas,12125
+1973,Asia,9716
+1973,Europe,73682
+1973,Middle East & North Africa,7822
+1973,Oceania,6373
+1973,Sub-Saharan Africa,2678
+1974,Americas,10465
+1974,Asia,9938
+1974,Europe,56274
+1974,Middle East & North Africa,5026
+1974,Oceania,4905
+1974,Sub-Saharan Africa,2537
+1975,Americas,5680
+1975,Asia,8050
+1975,Europe,29468
+1975,Middle East & North Africa,3341
+1975,Oceania,4772
+1975,Sub-Saharan Africa,1437
+1976,Americas,5511
+1976,Asia,10687
+1976,Europe,31153
+1976,Middle East & North Africa,14557
+1976,Oceania,6712
+1976,Sub-Saharan Africa,2279
+1977,Americas,5043
+1977,Asia,17409
+1977,Europe,32685
+1977,Middle East & North Africa,4668
+1977,Oceania,10000
+1977,Sub-Saharan Africa,3355
+1978,Americas,4255
+1978,Asia,20736
+1978,Europe,23057
+1978,Middle East & North Africa,2816
+1978,Oceania,12662
+1978,Sub-Saharan Africa,3655
+1979,Americas,3812
+1979,Asia,23950
+1979,Europe,31275
+1979,Middle East & North Africa,2924
+1979,Oceania,14972
+1979,Sub-Saharan Africa,3783
+1980,Americas,3974
+1980,Asia,26255
+1980,Europe,52664
+1980,Middle East & North Africa,3236
+1980,Oceania,19806
+1980,Sub-Saharan Africa,4725
+1981,Americas,4318
+1981,Asia,28352
+1981,Europe,62691
+1981,Middle East & North Africa,3396
+1981,Oceania,14184
+1981,Sub-Saharan Africa,5076
+1982,Americas,4467
+1982,Asia,25666
+1982,Europe,47377
+1982,Middle East & North Africa,2409
+1982,Oceania,8735
+1982,Sub-Saharan Africa,4351
+1983,Americas,4368
+1983,Asia,26184
+1983,Europe,23934
+1983,Middle East & North Africa,3929
+1983,Oceania,7297
+1983,Sub-Saharan Africa,3097
+1984,Americas,6011
+1984,Asia,30612
+1984,Europe,22132
+1984,Middle East & North Africa,5219
+1984,Oceania,10754
+1984,Sub-Saharan Africa,2780
+1985,Americas,6721
+1985,Asia,30583
+1985,Europe,28099
+1985,Middle East & North Africa,6505
+1985,Oceania,15703
+1985,Sub-Saharan Africa,4976
+1986,Americas,7132
+1986,Asia,38235
+1986,Europe,36544
+1986,Middle East & North Africa,7501
+1986,Oceania,16602
+1986,Sub-Saharan Africa,7521
+1987,Americas,7717
+1987,Asia,48832
+1987,Europe,43560
+1987,Middle East & North Africa,10050
+1987,Oceania,25657
+1987,Sub-Saharan Africa,7638
+1988,Americas,7390
+1988,Asia,54601
+1988,Europe,42438
+1988,Middle East & North Africa,8044
+1988,Oceania,27999
+1988,Sub-Saharan Africa,4830
+1989,Americas,7140
+1989,Asia,50607
+1989,Europe,38386
+1989,Middle East & North Africa,5754
+1989,Oceania,15270
+1989,Sub-Saharan Africa,4061
+1990,Americas,6556
+1990,Asia,60906
+1990,Europe,32333
+1990,Middle East & North Africa,7154
+1990,Oceania,10970
+1990,Sub-Saharan Africa,3728
+1991,Americas,5878
+1991,Asia,54392
+1991,Europe,26870
+1991,Middle East & North Africa,7021
+1991,Oceania,10362
+1991,Sub-Saharan Africa,2823
+1992,Americas,3578
+1992,Asia,32989
+1992,Europe,22200
+1992,Middle East & North Africa,5417
+1992,Oceania,9517
+1992,Sub-Saharan Africa,2570
+1993,Americas,3155
+1993,Asia,27766
+1993,Europe,20473
+1993,Middle East & North Africa,4826
+1993,Oceania,10196
+1993,Sub-Saharan Africa,3249
+1994,Americas,3905
+1994,Asia,32376
+1994,Europe,25523
+1994,Middle East & North Africa,7146
+1994,Oceania,13592
+1994,Sub-Saharan Africa,4857
+1995,Americas,3823
+1995,Asia,39524
+1995,Europe,26463
+1995,Middle East & North Africa,7608
+1995,Oceania,16225
+1995,Sub-Saharan Africa,5444
+1996,Americas,4983
+1996,Asia,39742
+1996,Europe,26854
+1996,Middle East & North Africa,7588
+1996,Oceania,18269
+1996,Sub-Saharan Africa,5802
+1997,Americas,4297
+1997,Asia,31601
+1997,Europe,24376
+1997,Middle East & North Africa,7128
+1997,Oceania,18774
+1997,Sub-Saharan Africa,7225
+1998,Americas,3796
+1998,Asia,33563
+1998,Europe,24066
+1998,Middle East & North Africa,6469
+1998,Oceania,23418
+1998,Sub-Saharan Africa,8502
+1999,Americas,3978
+1999,Asia,39413
+1999,Europe,23059
+1999,Middle East & North Africa,7407
+1999,Oceania,26772
+1999,Sub-Saharan Africa,9135
+2000,Americas,4981
+2000,Asia,49860
+2000,Europe,25360
+2000,Middle East & North Africa,7812
+2000,Oceania,31226
+2000,Sub-Saharan Africa,10446
+2001,Americas,5366
+2001,Asia,50081
+2001,Europe,25273
+2001,Middle East & North Africa,6922
+2001,Oceania,20499
+2001,Sub-Saharan Africa,11711
+2002,Americas,5578
+2002,Asia,52120
+2002,Europe,27997
+2002,Middle East & North Africa,11436
+2002,Oceania,16767
+2002,Sub-Saharan Africa,10867
+2003,Americas,6126
+2003,Asia,62117
+2003,Europe,34384
+2003,Middle East & North Africa,12203
+2003,Oceania,19122
+2003,Sub-Saharan Africa,13490
+2004,Americas,6474
+2004,Asia,70412
+2004,Europe,34899
+2004,Middle East & North Africa,13797
+2004,Oceania,22254
+2004,Sub-Saharan Africa,14065
+2005,Americas,7033
+2005,Asia,77272
+2005,Europe,40555
+2005,Middle East & North Africa,12057
+2005,Oceania,23952
+2005,Sub-Saharan Africa,12941
+2006,Americas,6743
+2006,Asia,88711
+2006,Europe,40894
+2006,Middle East & North Africa,10845
+2006,Oceania,28377
+2006,Sub-Saharan Africa,14542
+2007,Americas,7335
+2007,Asia,94197
+2007,Europe,42650
+2007,Middle East & North Africa,9828
+2007,Oceania,33298
+2007,Sub-Saharan Africa,15117
+2008,Americas,7936
+2008,Asia,100506
+2008,Europe,45838
+2008,Middle East & North Africa,12558
+2008,Oceania,32504
+2008,Sub-Saharan Africa,19961
+2009,Americas,8846
+2009,Asia,99893
+2009,Europe,39427
+2009,Middle East & North Africa,9934
+2009,Oceania,24670
+2009,Sub-Saharan Africa,20631
+2010,Americas,7908
+2010,Asia,103976
+2010,Europe,34199
+2010,Middle East & North Africa,11134
+2010,Oceania,34042
+2010,Sub-Saharan Africa,16317
+2011,Americas,9044
+2011,Asia,113916
+2011,Europe,43110
+2011,Middle East & North Africa,11256
+2011,Oceania,42921
+2011,Sub-Saharan Africa,16821
+2012,Americas,10022
+2012,Asia,127749
+2012,Europe,40475
+2012,Middle East & North Africa,12648
+2012,Oceania,41689
+2012,Sub-Saharan Africa,13531
+2013,Americas,9903
+2013,Asia,127630
+2013,Europe,41090
+2013,Middle East & North Africa,14859
+2013,Oceania,29293
+2013,Sub-Saharan Africa,12788
+2014,Americas,9085
+2014,Asia,123428
+2014,Europe,39122
+2014,Middle East & North Africa,16562
+2014,Oceania,24595
+2014,Sub-Saharan Africa,12309
+2015,Americas,9142
+2015,Asia,127499
+2015,Europe,34415
+2015,Middle East & North Africa,14635
+2015,Oceania,22840
+2015,Sub-Saharan Africa,11192
+2016,Americas,9687
+2016,Asia,126955
+2016,Europe,32480
+2016,Middle East & North Africa,28525
+2016,Oceania,16441
+2016,Sub-Saharan Africa,11369

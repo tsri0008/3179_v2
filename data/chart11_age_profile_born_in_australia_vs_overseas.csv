@@ -1,0 +1,37 @@
+age_group,birthplace,percent_of_group
+0-4,Born in Australia,8.0
+0-4,Born overseas,0.6
+5-9,Born in Australia,8.1
+5-9,Born overseas,1.9
+10-14,Born in Australia,7.8
+10-14,Born overseas,2.6
+15-19,Born in Australia,6.9
+15-19,Born overseas,3.1
+20-24,Born in Australia,6.6
+20-24,Born overseas,5.2
+25-29,Born in Australia,6.6
+25-29,Born overseas,7.7
+30-34,Born in Australia,6.3
+30-34,Born overseas,9.7
+35-39,Born in Australia,6.0
+35-39,Born overseas,10.3
+40-44,Born in Australia,5.6
+40-44,Born overseas,8.7
+45-49,Born in Australia,6.0
+45-49,Born overseas,7.5
+50-54,Born in Australia,6.0
+50-54,Born overseas,7.2
+55-59,Born in Australia,5.5
+55-59,Born overseas,7.3
+60-64,Born in Australia,5.4
+60-64,Born overseas,6.7
+65-69,Born in Australia,4.7
+65-69,Born overseas,6.0
+70-74,Born in Australia,4.0
+70-74,Born overseas,5.8
+75-79,Born in Australia,2.8
+75-79,Born overseas,4.1
+80-84,Born in Australia,1.8
+80-84,Born overseas,2.9
+85+,Born in Australia,1.8
+85+,Born overseas,2.7

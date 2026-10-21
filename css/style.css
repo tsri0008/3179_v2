@@ -1,0 +1,215 @@
+/* Many Communities, One Australia: page styles */
+
+:root {
+  --paper: #FBF8F2;
+  --ink: #2B2A28;
+  --muted: #6B675E;
+  --rule: #E3DCCD;
+  --accent: #E07B2D;
+  --accent-deep: #B85A14;
+  --card: #FFFFFF;
+  --font-head: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* the page's body */
+/* no margin / gap around it. line height refers to the space between the lines of text */
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* refers to the dark orange link with under line nudged 2px waay from the text */
+a { color: var(--accent-deep); text-underline-offset: 2px; }
+/* activate when the user hovers over it */
+a:hover { color: var(--ink); }
+
+/* Header's area's limit for width, centered through auto margin */
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 24px 40px;
+}
+
+/* the little text above the main headline */ 
+.kicker {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+/* header / main title */
+/* clamp font size refers to size that grows with the screen. limiting between 36 and 64px whilst 6vw refers the percentage of total view point */
+.hero h1 {
+  margin: 0 0 20px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+/* orange */
+.hero h1 span { color: var(--accent); }
+
+/*  the subtitles */
+.lead {
+  max-width: 62ch;
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* Story sections or the main content area */
+/* essentially make it central and... */
+main { padding-bottom: 24px; }
+
+/* the section wrapper */
+.story {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 24px 8px;
+}
+
+/* is the part 1" between the sections */
+.section-label {
+  margin: 32px 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+/* is the titel under the above's label */
+.section-title {
+  margin: 0 0 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+}
+
+/* Chart blocks */
+.chart-block {
+  margin: 0 0 8px;
+  padding: 28px 28px 24px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px; 
+}
+
+.chart-block h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: clamp(22px, 3vw, 28px);
+  line-height: 1.2;
+}
+
+.takeaway {
+  max-width: 70ch;
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+/* vega-embed adds its own .vega-embed class (inline-block) to the chart container,
+   so the two-class selector is needed to keep the container as a block that scrolls. */
+.chart,
+.chart.vega-embed {
+  display: block;
+  max-width: 100%;
+  /* Charts keep their designed size; narrow screens scroll sideways inside the card */
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+figcaption {
+  max-width: 78ch;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Short sentences that link one chart to the next */
+.bridge {
+  max-width: 62ch;
+  margin: 36px auto 36px 0;
+  padding-left: 18px;
+  border-left: 4px solid var(--accent);
+  font-family: var(--font-head);
+  font-size: clamp(20px, 2.6vw, 25px);
+  line-height: 1.35;
+}
+
+/* ---------- Footer ---------- */
+.credits {
+  max-width: 960px;
+  margin: 56px auto 0;
+  padding: 32px 24px 64px;
+  border-top: 2px solid var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.credits h2 {
+  margin: 0 0 12px;
+  font-family: var(--font-head);
+  font-size: 22px;
+  color: var(--ink);
+}
+
+.credits ul { padding-left: 20px; }
+.credits li { margin-bottom: 6px; }
+
+code {
+  padding: 1px 5px;
+  background: #F1ECE2;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+/* Vega slider (flow map): label and control in the page typeface */
+.vega-bindings {
+  margin-top: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink);
+}
+.vega-bindings .vega-bind label { display: flex; align-items: center; gap: 12px; }
+.vega-bindings .vega-bind-name { font-weight: 600; }
+.vega-bindings input[type=range] { width: 260px; accent-color: var(--accent-deep); }
+
+/* Tooltip styling for vega-embed */
+#vg-tooltip-element {
+  font-family: var(--font-body) !important;
+  font-size: 14px !important;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .hero { padding: 48px 16px 24px; }
+  .story, .credits { padding-left: 16px; padding-right: 16px; }
+  .chart-block { padding: 20px 16px 16px; }
+}

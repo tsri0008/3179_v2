@@ -1,36 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Many Communities, One Australia</title>
+  <meta name="description" content="How migration has shaped Australia's multicultural communities, told through data from the ABS and the Department of Home Affairs.">
+
+  <!-- Typefaces: Fraunces (headings) and Source Sans 3 (text and charts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Many Communities, One Australia</h1>
-<p>work in progress</p>
+  <header class="hero">
+    <p class="kicker">Australian multicultural communities</p>
+    <h1>Many Communities, <span>One Australia</span></h1>
+    <p class="lead">Almost three in ten people living in Australia were born in another country. This page follows how that happened: who we are, where people came from, and how the mix is changing.</p>
+  </header>
 
-<h2>Part 1: Who are we?</h2>
+  <main>
 
-<h3>Almost 3 in 10 of us were born overseas</h3>
-<div id="chart-waffle"></div>
-<p>Source: ABS, 2021 Census, Cultural diversity data summary, Table 1.</p>
+  <!-- Four parts, one scrolling story. Charts are drawn by js/main.js from js/chartN_*.vg.json -->
+    <section class="story" id="who-are-we" aria-labelledby="who-are-we-title">
+      <p class="section-label">Part 1</p>
+      <h2 id="who-are-we-title" class="section-title">Who are we, and how is it changing?</h2>
 
-<h3>India has caught up with England as our largest overseas-born community</h3>
-<div id="chart-slope"></div>
-<p>Source: ABS, Australia's population by country of birth, June 2025, Table 1.1.</p>
+      <figure class="chart-block" id="block-waffle">
+        <h3>Almost 3 in 10 of us were born overseas</h3>
+        <p class="takeaway">At the 2021 Census, 28 out of every 100 people in Australia said they were born in another country. Another 5 in 100 did not answer the question.</p>
+        <div id="chart-waffle" class="chart" role="img" aria-label="Waffle chart. Of every 100 people in Australia in 2021, 67 were born in Australia, 28 were born overseas and 5 did not state where they were born."></div>
+        <figcaption>Each square is 1 in every 100 people counted. Hover over a square for the numbers. Source: Australian Bureau of Statistics (ABS), 2021 Census, Cultural diversity data summary, Table 1.</figcaption>
+      </figure>
 
-<h3>Australia's new arrivals shifted from Europe to Asia</h3>
-<div id="chart-stream"></div>
-<p>Source: Department of Home Affairs, Historical Migration Statistics 2024-25.</p>
+      <p class="bridge">So where do those communities come from, and has that changed recently?</p>
 
-<h2>Credits</h2>
-<p>Data: ABS and Department of Home Affairs (see sources above). Cleaned files are in the data folder.</p>
-<p>AI use: Claude (Anthropic) was used to help clean the data and draft the chart code.</p>
-<p>Nuttapath Sirsawat, October 2026</p>
+      <figure class="chart-block" id="block-slope">
+        <h3>India has caught up with England as our largest overseas-born community</h3>
+        <p class="takeaway">Ten years ago England was clearly first. By 2025, the number of people born in India (971,000) is level with those born in England (971,000). Nepal has risen fastest, from 31st place to 8th.</p>
+        <div id="chart-slope" class="chart" role="img" aria-label="Slope chart comparing the rank of Australia's largest overseas-born communities in 2015 and 2025. India rises from fourth to first, Nepal from thirty-first to eighth, while England, Italy and Scotland slip."></div>
+        <figcaption>Rank among all overseas-born communities in 2015 and 2025; hover over a dot for the number of people. These are estimates of people usually living in Australia on 30 June, rounded to the nearest 10; 2025 is preliminary, so India and England are effectively tied. Source: ABS, Australia&rsquo;s population by country of birth, June 2025, Table 1.1.</figcaption>
+      </figure>
 
-<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
-<script src="js/main.js"></script>
+      <p class="bridge">The slope chart compares two moments. What does the whole 30-year story look like?</p>
+
+      <figure class="chart-block" id="block-bump">
+        <h3>Thirty years of change: a new top ten</h3>
+        <p class="takeaway">In 1996 England was first, then New Zealand and Italy, and five of the top seven communities were European. Since then the blue lines (Europe) have slid down the ranking while lines for Asia have climbed, and India has moved from 12th place to the top.</p>
+        <div id="chart-bump" class="chart" role="img" aria-label="Bump chart of the rank of the largest overseas-born communities in Australia each year from 1996 to 2025. India climbs to first place and Nepal from 97th to 8th, while European countries such as Italy, Greece and Germany fall."></div>
+        <figcaption>Each line follows one country of birth; a line going up means that community moved up the ranking by size. Click a region in the legend to highlight it. Estimates of people living in Australia at 30 June of each year; 2025 is preliminary. Source: ABS, Australia&rsquo;s population by country of birth, 1996&ndash;2025 (Tables 1.1 to 1.3).</figcaption>
+      </figure>
+
+    </section>
+
+    <section class="story" id="where-from" aria-labelledby="where-from-title">
+      <p class="section-label">Part 2</p>
+      <h2 id="where-from-title" class="section-title">Where did we come from?</h2>
+
+      <figure class="chart-block" id="block-stream">
+        <h3>Australia&rsquo;s new arrivals shifted from Europe to Asia</h3>
+        <p class="takeaway">After World War II, nearly everyone settling in Australia came from Europe. From the 1980s onwards, Asia became the largest source, and by the 2010s more than half of arrivals each year came from Asia.</p>
+        <div id="chart-stream" class="chart" role="img" aria-label="Streamgraph of people settling in Australia each year from 1947 to 2016, by world region. Europe dominates until the 1970s, then Asia grows to become the largest region from 1983."></div>
+        <figcaption>Each coloured band shows the number of people from that region who arrived to settle in Australia each year; the thicker the band, the more people. Hover to read the numbers for any year. <strong>Take care:</strong> the way arrivals were counted changed in 1959 and 1996, so compare the overall shapes rather than exact numbers across those years. Some Middle Eastern countries are grouped with Asia in the earliest years. Source: Department of Home Affairs, Historical Migration Statistics 2024&ndash;25.</figcaption>
+      </figure>
+
+      <p class="bridge">That shows when the change happened. A map shows where in the world these communities come from.</p>
+
+      <figure class="chart-block" id="block-symbol">
+        <h3>People in Australia have come from nearly every part of the world</h3>
+        <p class="takeaway">The largest circles are the United Kingdom (1.16 million people living here), India (971,000), China (732,000) and New Zealand (638,000). Asia fills the region north of Australia with many mid-sized circles, while Europe and the Americas have fewer, larger ones.</p>
+        <div id="chart-symbol" class="chart" role="img" aria-label="World map with circles sized by the number of people living in Australia who were born in each country, coloured by region of birth. The largest circles are the United Kingdom, India, China and New Zealand."></div>
+        <figcaption>Circle area shows the number of people born in each country and living in Australia on 30 June 2025 (countries with at least 1,000 people). Circles sit on each country&rsquo;s centre point. The United Kingdom combines England, Scotland, Wales, Northern Ireland and the Crown dependencies. Hover over a circle for exact numbers. Source: ABS, Australia&rsquo;s population by country of birth, June 2025, Table 1.1; country centre points from the mledoze/countries dataset; base map from Natural Earth.</figcaption>
+      </figure>
+
+      <p class="bridge">Those circles show who already lives here. Who is arriving now?</p>
+
+      <figure class="chart-block" id="block-flow">
+        <h3>India sends the most new permanent residents, by a wide margin</h3>
+        <p class="takeaway">In 2024&ndash;25 about 1 in 4 permanent visas granted through the family, skilled and special eligibility streams went to Indian citizens (48,326), well ahead of China (20,405) and the Philippines (10,972). Use the slider to hide smaller communities and see only the busiest routes.</p>
+        <div id="chart-flow" class="chart" role="img" aria-label="Flow map of permanent visas granted in 2024 to 2025, with curved lines from each country of citizenship to Canberra. The thickest line comes from India, followed by China, the Philippines and the United Kingdom."></div>
+        <figcaption>Line width shows permanent visas granted by citizenship in 2024&ndash;25 (family, skilled and special eligibility streams; counts under 5 are treated as 0). Lines follow the shortest path over the globe to Canberra. New Zealand citizens need no visa, so they are not shown. Drag the slider to show only countries above a visa count. Source: Department of Home Affairs, Historical Migration Statistics 2024&ndash;25, and Migration Program outcome by citizenship (Table 3.3); coordinates from mledoze/countries.</figcaption>
+      </figure>
+
+    </section>
+
+    <section class="story" id="where-live" aria-labelledby="where-live-title">
+      <p class="section-label">Part 3</p>
+      <h2 id="where-live-title" class="section-title">Where we live and what we speak</h2>
+
+      <figure class="chart-block" id="block-choropleth">
+        <h3>Languages other than English are spoken in more than one in five homes</h3>
+        <p class="takeaway">Across Australia 22% of people speak a language other than English at home. Victoria (28%) and New South Wales (27%) are above that, while Tasmania (9%) is the lowest. The Northern Territory is highest (32%), mostly because of Indigenous languages.</p>
+        <div id="chart-choropleth" class="chart" role="img" aria-label="Choropleth map of Australian states and territories showing the percentage of people who speak a language other than English at home in 2021. The Northern Territory is highest at 32 percent and Tasmania lowest at 9 percent."></div>
+        <figcaption>Share of all people counted at the 2021 Census (including those who did not answer) who speak a language other than English at home. The Northern Territory figure includes Australian Indigenous languages. Darker colours show a higher share. Hover over a state for its most common language other than English. Source: ABS, 2021 Census, Cultural diversity data summary, Tables 5 and 7; state boundaries from rowanhogan/australian-states.</figcaption>
+      </figure>
+
+      <p class="bridge">Which languages are they? The map hides a long list.</p>
+
+      <figure class="chart-block" id="block-languages">
+        <h3>Mandarin is the most common language other than English</h3>
+        <p class="takeaway">Mandarin is spoken at home by about 685,000 people, ahead of Arabic (367,000) and Vietnamese (321,000). The top twelve include languages from Asia, Europe and the Middle East.</p>
+        <div id="chart-languages" class="chart" role="img" aria-label="Lollipop chart of the twelve most common languages other than English spoken at home in Australia in 2021. Mandarin is highest with 685,000 speakers, then Arabic, Vietnamese, Cantonese and Punjabi."></div>
+        <figcaption>Number of people who speak each language at home, 2021 Census. Languages are counted separately, so Mandarin and Cantonese are not combined. Source: ABS, 2021 Census, Cultural diversity data summary, Table 5.</figcaption>
+      </figure>
+
+      <p class="bridge">Languages follow where communities settle. Is recent arrival also uneven across the country?</p>
+
+      <figure class="chart-block" id="block-tiles">
+        <h3>Recent arrivals are concentrated in the ACT, Victoria and the Northern Territory</h3>
+        <p class="takeaway">Each state is drawn as one equal-sized tile so that small places such as the ACT are as easy to read as large ones. About 6% of ACT residents had arrived in the five years before the 2021 Census, against under 4% in Tasmania and Queensland.</p>
+        <div id="chart-tiles" class="chart" role="img" aria-label="Tile grid map of Australia's states and territories. Each tile shows the share of residents who arrived between 2016 and 2021 and the share born overseas. The ACT, Victoria and the Northern Territory have the highest recent arrivals."></div>
+        <figcaption>Tiles are placed roughly where each state lies on a map; they do not show real sizes. Colour and the number show the percentage of residents who arrived in Australia from 2016 to 2021; hover over a tile to also see the percentage born overseas. Source: ABS, 2021 Census, Cultural diversity data summary, Table 1.</figcaption>
+      </figure>
+
+    </section>
+
+    <section class="story" id="making-home" aria-labelledby="making-home-title">
+      <p class="section-label">Part 4</p>
+      <h2 id="making-home-title" class="section-title">Making Australia home</h2>
+
+      <figure class="chart-block" id="block-religion">
+        <h3>Faith and background are not one-to-one</h3>
+        <p class="takeaway">Christianity is the largest religion for people born in Southern and Eastern Europe (77%) and Sub-Saharan Africa (63%), while two in three people born in North-East Asia report no religion (68%). Hinduism, Buddhism and Islam are each concentrated among people born in particular regions, such as Hinduism in Southern and Central Asia (41%).</p>
+        <div id="chart-religion" class="chart" role="img" aria-label="Heatmap of religion by region of birth in 2021. Christianity is strongest among people born in southern and eastern Europe, no religion among those born in north-east Asia, Hinduism among southern and central Asia, Buddhism in south-east Asia and Islam in north Africa and the Middle East."></div>
+        <figcaption>Each cell is the percentage of people born in that region who report that religion; each column adds up to about 97%, as the rest did not state a religion or gave an answer too rare to show. Darker cells mean a higher share. &ldquo;No religion&rdquo; includes secular and other spiritual beliefs. Source: ABS, 2021 Census, Cultural diversity data summary, Table 7.</figcaption>
+      </figure>
+
+      <p class="bridge">Background also shapes age. Who are the people in these communities?</p>
+
+      <figure class="chart-block" id="block-pyramid">
+        <h3>Overseas-born residents are concentrated in working ages</h3>
+        <p class="takeaway">36% of overseas-born people are aged 25 to 44, compared with 25% of people born in Australia. In turn, 24% of people born here are children under 15, against only 5% of the overseas-born, so overseas-born residents are mostly adults.</p>
+        <div id="chart-pyramid" class="chart" role="img" aria-label="Population pyramid comparing the age profile of people born in Australia (left) and born overseas (right) in 2021. The overseas-born bars are widest at ages 25 to 44."></div>
+        <figcaption>Each side shows the percentage of its own group in each five-year age band, so the two sides can be compared fairly even though there are more Australia-born people. Source: ABS, 2021 Census, Cultural diversity data summary, Table 1.</figcaption>
+      </figure>
+
+      <p class="bridge">Many newcomers go on to take up citizenship. How quickly?</p>
+
+      <figure class="chart-block" id="block-citizenship">
+        <h3>Citizenship rates depend on how long a community has been here</h3>
+        <p class="takeaway">About 62% of overseas-born residents are Australian citizens. Rates are highest for long-established communities such as Hong Kong, Italy and South Africa (76&ndash;79%), and lowest for newer arrivals such as Nepal (21%) and for New Zealanders (35%), who can live here without applying.</p>
+        <div id="chart-citizenship" class="chart" role="img" aria-label="Lollipop chart of the percentage of overseas-born residents who are Australian citizens, by country of birth, 2021. Hong Kong is highest at 79 percent and Nepal lowest at 21 percent; the average is 62 percent."></div>
+        <figcaption>Percentage of people born in each country and counted at the 2021 Census who are Australian citizens (excluding those who did not state citizenship). Dot size shows the number of people born in that country. Across all overseas-born residents the figure is 62%. Source: ABS, 2021 Census, Cultural diversity data summary, Table 2.</figcaption>
+      </figure>
+
+      <p class="bridge">Finally, the policy that governs who gets to settle has changed too.</p>
+
+      <figure class="chart-block" id="block-streams">
+        <h3>Permanent migration moved from family reunion to skilled workers</h3>
+        <p class="takeaway">In 1984&ndash;85, 81% of permanent places went to family and child visas. By 2024&ndash;25, 71% (132,148 of 185,001) went to the skill stream.</p>
+        <div id="chart-streams" class="chart" role="img" aria-label="Stacked area chart of permanent migration program outcomes by stream from 1984-85 to 2024-25. The family stream dominates early on, while the skill stream dominates from the 2000s."></div>
+        <figcaption>Number of permanent visas granted each year by stream. Family includes child visas. Special eligibility is the thin grey band at the bottom. Hover for the numbers in any year. Source: Department of Home Affairs, Historical Migration Statistics 2024&ndash;25.</figcaption>
+      </figure>
+
+    </section>
+
+  </main>
+
+  <footer class="credits">
+    <h2>Data sources and credits</h2>
+    <p>Each chart combines at least two of the sources below (for example the 2021 Census, the 2025 population estimates and Home Affairs migration records).</p>
+    <ul>
+      <li>Australian Bureau of Statistics. (2022). <em>Cultural diversity: Census, 2021</em> [Data set]. <a href="https://www.abs.gov.au/statistics/people/people-and-communities/cultural-diversity-census/2021">abs.gov.au</a></li>
+      <li>Australian Bureau of Statistics. (2026). <em>Australia&rsquo;s population by country of birth, June 2025</em> [Data set]. <a href="https://www.abs.gov.au/statistics/people/population/australias-population-country-birth/latest-release">abs.gov.au</a></li>
+      <li>Department of Home Affairs. (2025). <em>Historical migration statistics, 2024&ndash;25</em> [Data set]. <a href="https://data.gov.au/data/dataset/historical-migration-statistics">data.gov.au</a></li>
+      <li>Department of Home Affairs. (2025). <em>Migration Program outcome by citizenship, 2024&ndash;25 (Table 3.3)</em> [Data set]. <a href="https://data.gov.au">data.gov.au</a></li>
+      <li>Natural Earth. (n.d.). <em>Admin 0 &ndash; Countries, 1:110m</em> (public domain), supplied as a TopoJSON file in the FIT3179 studio. <a href="https://www.naturalearthdata.com">naturalearthdata.com</a></li>
+      <li>rowanhogan. (n.d.). <em>australian-states</em> [GeoJSON boundaries]. <a href="https://github.com/rowanhogan/australian-states">GitHub</a></li>
+      <li>mledoze. (n.d.). <em>countries</em> [Country centre points, ODbL]. <a href="https://github.com/mledoze/countries">GitHub</a></li>
+    </ul>
+    <p>Data were filtered, regrouped and summed from the original files without changing any reported values; the cleaned files and notes are in the <code>data</code> folder. Charts are built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a>. Typefaces: Fraunces and Source Sans 3 (Google Fonts).</p>
+    <p><strong>AI use:</strong> Claude (Anthropic) was used to help clean the data, draft the Vega-Lite specifications and write first drafts of the chart text. I checked the numbers against the source files and edited the text.</p>
+    <p>Created by Nuttapath Sirsawat for FIT3179 Data Visualisation 2, Monash University, October 2026.</p>
+  </footer>
+
+  <!-- The three Vega-Lite libraries (same as the studio) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  <!-- One file per chart. Each file creates a variable (vg_1 ... vg_13) that holds that chart's recipe -->
+  <script src="js/chart1_waffle.js"></script>
+  <script src="js/chart2_slope.js"></script>
+  <script src="js/chart3_streamgraph.js"></script>
+  <script src="js/chart4_bump.js"></script>
+  <script src="js/chart5_symbol_map.js"></script>
+  <script src="js/chart6_flow_map.js"></script>
+  <script src="js/chart7_choropleth.js"></script>
+  <script src="js/chart8_tile_grid_map.js"></script>
+  <script src="js/chart9_language_lollipop.js"></script>
+  <script src="js/chart10_religion_heatmap.js"></script>
+  <script src="js/chart11_age_pyramid.js"></script>
+  <script src="js/chart12_citizenship_lollipop.js"></script>
+  <script src="js/chart13_permanent_migration_streams.js"></script>
+  <!-- main.js puts each recipe into its box on the page -->
+  <script src="js/main.js"></script>
 </body>
 </html>

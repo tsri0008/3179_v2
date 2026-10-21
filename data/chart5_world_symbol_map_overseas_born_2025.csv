@@ -1,0 +1,140 @@
+country,region,lat,lon,people
+United Kingdom,Europe,54,-2,1158420
+India,Asia,20,77,971020
+China,Asia,35,105,731540
+New Zealand,Oceania,-41,174,637680
+Philippines,Asia,13,122,412530
+Vietnam,Asia,16.17,107.83,326630
+South Africa,Sub-Saharan Africa,-29,24,229950
+Nepal,Asia,28,84,213580
+Sri Lanka,Asia,7,81,184800
+Malaysia,Asia,2.5,112.5,184320
+Italy,Europe,42.83,12.83,152560
+Pakistan,Asia,30,70,143920
+Indonesia,Asia,-5,120,128140
+Hong Kong,Asia,22.27,114.19,128040
+United States,Americas,38,-97,122030
+South Korea,Asia,37,127.5,121660
+Thailand,Asia,15,100,115250
+Iraq,Middle East & North Africa,33,44,111880
+Ireland,Europe,53,-8,105620
+Germany,Europe,51,9,101400
+Lebanon,Middle East & North Africa,33.83,35.83,98390
+Afghanistan,Asia,33,65,96180
+Iran,Middle East & North Africa,32,53,95690
+Fiji,Oceania,-18,175,95140
+Greece,Europe,39,22,86980
+Bangladesh,Asia,24,90,84880
+Brazil,Americas,-10,-55,74110
+Singapore,Asia,1.37,103.8,72110
+Taiwan,Asia,23.5,121,70650
+Colombia,Americas,4,-72,65380
+Netherlands,Europe,52.5,5.75,63850
+Canada,Americas,60,-95,61310
+Japan,Asia,36,138,59280
+Zimbabwe,Sub-Saharan Africa,-20,30,52830
+France,Europe,46,2,49620
+Egypt,Middle East & North Africa,27,30,48840
+North Macedonia,Europe,41.83,22,48680
+Myanmar,Asia,22,98,48450
+Cambodia,Asia,13,105,47290
+Croatia,Europe,45.17,15.5,47240
+Poland,Europe,52,20,46900
+Türkiye,Middle East & North Africa,39,35,46650
+Bhutan,Asia,27.5,90.5,40560
+Chile,Americas,-30,-71,40140
+Samoa,Oceania,-13.58,-172.33,39640
+Syria,Middle East & North Africa,35,38,38800
+Papua New Guinea,Oceania,-6,147,38560
+Kenya,Sub-Saharan Africa,1,38,37850
+Malta,Europe,35.83,14.58,34060
+Russia,Europe,60,100,32000
+Mauritius,Sub-Saharan Africa,-20.28,57.55,30040
+Argentina,Americas,-34,-64,29990
+Bosnia and Herzegovina,Europe,44,18,29780
+Serbia,Europe,44,21,28830
+Nigeria,Sub-Saharan Africa,10,8,22020
+Ukraine,Europe,49,32,21450
+Spain,Europe,40,-4,21300
+Tonga,Oceania,-20,-175,20330
+United Arab Emirates,Middle East & North Africa,24,54,19990
+Sudan,Middle East & North Africa,15,30,19170
+Ethiopia,Sub-Saharan Africa,8,38,18510
+Portugal,Europe,39.5,-8,18070
+Saudi Arabia,Middle East & North Africa,25,45,17240
+Peru,Americas,-10,-76,17060
+Cyprus,Europe,35,33,16560
+Hungary,Europe,47,20,16350
+Romania,Europe,46,25,16150
+Timor-Leste,Asia,-8.83,125.92,14950
+Mongolia,Asia,46,105,14880
+Switzerland,Europe,47,8,13620
+Austria,Europe,47.33,13.33,13560
+Israel,Middle East & North Africa,31.47,35.13,12870
+Laos,Asia,18,105,12610
+Sweden,Europe,62,15,12060
+El Salvador,Americas,13.83,-88.92,11140
+Czechia,Europe,49.75,15.5,10650
+Uruguay,Americas,-33,-56,10280
+Mexico,Americas,23,-102,10240
+Ghana,Sub-Saharan Africa,8,-2,10010
+Jordan,Middle East & North Africa,31,36,9970
+Somalia,Sub-Saharan Africa,10,49,9890
+Vanuatu,Oceania,-16,167,9660
+Kuwait,Middle East & North Africa,29.5,45.75,9610
+Denmark,Europe,56,10,9250
+DR Congo,Sub-Saharan Africa,0,25,9230
+South Sudan,Middle East & North Africa,7,30,9190
+Zambia,Sub-Saharan Africa,-15,30,9120
+Solomon Islands,Oceania,-8,159,8810
+Venezuela,Americas,8,-66,8620
+Belgium,Europe,50.83,4,8260
+Cook Islands,Oceania,-21.23,-159.77,8030
+Finland,Europe,64,26,7970
+Eritrea,Sub-Saharan Africa,15,39,7200
+Slovakia,Europe,48.67,19.5,6770
+Uganda,Sub-Saharan Africa,1,32,5610
+Ecuador,Americas,-2,-77.5,5530
+Slovenia,Europe,46.12,14.82,5280
+Tanzania,Sub-Saharan Africa,-6,35,5150
+Sierra Leone,Sub-Saharan Africa,8.5,-11.5,4290
+Norway,Europe,62,10,4220
+Albania,Europe,41,20,4210
+Estonia,Europe,59,26,4210
+Bulgaria,Europe,43,25,3920
+Liberia,Sub-Saharan Africa,6.5,-9.5,3760
+Brunei,Asia,4.5,114.67,3700
+Burundi,Sub-Saharan Africa,-3.5,30,3670
+Qatar,Middle East & North Africa,25.5,51.25,3430
+Macau,Asia,22.17,113.55,3360
+Latvia,Europe,57,25,3280
+Lithuania,Europe,56,24,3250
+Palestine,Middle East & North Africa,31.9,35.2,3090
+Kazakhstan,Asia,48,68,3060
+Morocco,Middle East & North Africa,32,-5,3020
+Uzbekistan,Asia,41,64,2900
+Libya,Middle East & North Africa,25,17,2800
+Bahrain,Middle East & North Africa,26,50.55,2670
+Seychelles,Sub-Saharan Africa,-4.58,55.67,2640
+Belarus,Europe,53,28,2610
+Congo,Sub-Saharan Africa,-1,15,2590
+Kiribati,Oceania,1.42,173,2450
+Oman,Middle East & North Africa,21,57,2450
+Malawi,Sub-Saharan Africa,-13.5,34,2160
+Botswana,Sub-Saharan Africa,-22,24,2040
+Namibia,Sub-Saharan Africa,-22,17,2030
+New Caledonia,Oceania,-21.5,165.5,1960
+Trinidad and Tobago,Americas,11,-61,1930
+Kosovo,Europe,42.67,21.17,1790
+Algeria,Middle East & North Africa,28,3,1780
+Montenegro,Europe,42.5,19.3,1690
+Rwanda,Sub-Saharan Africa,-2,30,1640
+Moldova,Europe,47,29,1540
+Armenia,Asia,40,45,1540
+Yemen,Middle East & North Africa,15,48,1490
+Jamaica,Americas,18.25,-77.5,1360
+Bolivia,Americas,-17,-65,1310
+Guinea,Sub-Saharan Africa,11,-10,1180
+Mozambique,Sub-Saharan Africa,-18.25,35,1120
+Cuba,Americas,21.5,-80,1050
+Niue,Oceania,-19.03,-169.87,1020
