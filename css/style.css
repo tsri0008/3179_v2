@@ -213,3 +213,5 @@ code {
   .story, .credits { padding-left: 16px; padding-right: 16px; }
   .chart-block { padding: 20px 16px 16px; }
 }
+/* prevent the link from going off the screen */
+li a, footer a { overflow-wrap: anywhere; }
