@@ -10,7 +10,7 @@ var vg_7 = {
   // Use the same font as the rest of the page. "view": {"stroke": null} removes the box around the map.
   "config": {"font": "Source Sans 3", "view": {"stroke": null}},
   // The same flat-map maths as the other maps. Vega-Lite zooms the map to fit the Australian shapes.
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "equalEarth", "rotate": [-134, 0, 0]},
   // Two layers: the coloured states, then the text labels on top.
   "layer": [
     // LAYER 1: the states, coloured by data.
