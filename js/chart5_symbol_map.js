@@ -75,6 +75,25 @@ var vg_5 = {
           {"field": "people", "type": "quantitative", "title": "People living in Australia", "format": ","}
         ]
       }
+    },
+    // Annotation
+    {
+      // Same CSV as the circles.
+      "data": {"url": "data/chart5_world_symbol_map_overseas_born_2025.csv"},
+      "transform": [
+        // Keep only the countries with more than 400,000 people living in Australia (that is five countries).
+        {"filter": "datum.people > 400000"},
+        // Make a new column called "note" that joins the country name to its number, e.g. "India: 971,020".
+        {"calculate": "datum.country + ': ' + format(datum.people, ',')", "as": "note"}
+      ],
+      // A text mark. "dy": -26 lifts the words 26 pixels above the middle of the circle so they sit above it.
+      "mark": {"type": "text", "fontSize": 12, "fontWeight": "bold", "dy": -26, "color": "#2B2A28"},
+      // Put the text at each country's longitude and latitude, the same place as its circle.
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "note", "type": "nominal"}
+      }
     }
   ]
 };

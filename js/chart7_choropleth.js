@@ -76,6 +76,22 @@ var vg_7 = {
         // The words to write come from the "label" column.
         "text": {"field": "label", "type": "nominal"}
       }
+    },
+    // Annotation
+    {
+      // Each row is one note: where it starts and what it says.
+      "data": {"values": [
+        {"px": 585, "py": 40, "note": "The Northern Territory has the\nhighest share (32.4%). Its most\ncommon other language is Kriol.\nIn every other state and territory\nit is Mandarin."},
+        {"px": 585, "py": 190, "note": "Across Australia, 22.3% of people\nspeak a language other than\nEnglish at home."}
+      ]},
+      // A text mark that starts at the left and breaks lines wherever the note contains \n.
+      "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 13, "lineBreak": "\n", "lineHeight": 16, "color": "#3A3A3A"},
+      // x and y come from the px and py columns. "scale": null means "these are already pixels, do not stretch them".
+      "encoding": {
+        "x": {"field": "px", "type": "quantitative", "scale": null},
+        "y": {"field": "py", "type": "quantitative", "scale": null},
+        "text": {"field": "note", "type": "nominal"}
+      }
     }
   ]
 };

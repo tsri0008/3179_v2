@@ -62,6 +62,23 @@ var vg_8 = {
       "mark": {"type": "text", "fontSize": 14, "dy": 14},
       // The words come from the "arrived_label" column (for example "5.4%").
       "encoding": {"text": {"field": "arrived_label", "type": "nominal"}}
+    },
+    // Annotation 1
+    {
+      // "filter" keeps only the rows where this test is true: the ACT (highest) and Tasmania (lowest).
+      "transform": [{"filter": "datum.abbr == 'ACT' || datum.abbr == 'TAS'"}],
+      // A rectangle with no fill ("fill": null) and a thick black border is an outline. It inherits x and y, so it sits exactly on the tile.
+      "mark": {"type": "rect", "fill": null, "stroke": "#222222", "strokeWidth": 3}
+    },
+    // Annotation 2
+    {
+      // One empty row of data, so one note.
+      "data": {"values": [{}]},
+      // The words of the note. Each piece in the list is one line.
+      "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 13, "color": "#3A3A3A",
+               "text": ["Black outlines: the ACT has the", "highest share of recent arrivals", "(6.0%) and Tasmania the lowest", "(3.6%)."]},
+      // Start 8 pixels from the left and 235 pixels from the top. "value" replaces the x and y the tiles use.
+      "encoding": {"x": {"value": 8}, "y": {"value": 235}}
     }
   ]
 };

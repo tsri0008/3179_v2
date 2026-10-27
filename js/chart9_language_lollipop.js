@@ -47,6 +47,16 @@ var vg_9 = {
       "mark": {"type": "text", "align": "left", "dx": 12},
       // The words come from the speakers column, formatted with commas.
       "encoding": {"text": {"field": "speakers", "type": "quantitative", "format": ","}}
+    },
+    // Annotation
+    {
+      // One empty row of data, so this layer draws exactly one thing (one note).
+      "data": {"values": [{}]},
+      // A "text" mark with the note written straight into it. A list of strings makes a multi-line note.
+      "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 13, "color": "#3A3A3A",
+               "text": ["Eight of the top twelve languages", "are Asian. Mandarin alone is spoken", "at home by almost twice as many", "people as Arabic (685,274 vs 367,159)."]},
+      // x = 300 pixels from the left, y = 230 pixels from the top. "value" replaces the x and y the chart normally uses.
+      "encoding": {"x": {"value": 300}, "y": {"value": 230}}
     }
   ]
 };

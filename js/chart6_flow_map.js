@@ -63,6 +63,23 @@ var vg_6 = {
           {"field": "properties.total", "type": "quantitative", "title": "Permanent visas, 2024-25", "format": ","}
         ]
       }
+    },
+    // Annotation
+    {
+      "data": {"values": [
+        // India is at longitude 77, latitude 20.
+        {"lon": 77, "lat": 20, "note": "India: 48,326 permanent visas,\nthe most of any country"},
+        // Canberra is at longitude 149.1, latitude -35.3.
+        {"lon": 149.1, "lat": -35.3, "note": "Every arc ends at Canberra.\nIt is a symbolic end point,\nnot a flight path."}
+      ]},
+      // "align": "right" ends the text at the point, so the note sits to the LEFT of it. "dy" nudges it up or down. "lineBreak" splits lines at \n.
+      "mark": {"type": "text", "align": "right", "dx": -12, "dy": 24, "fontSize": 12, "lineBreak": "\n", "lineHeight": 14, "color": "#2B2A28"},
+      // Place each note by its longitude and latitude columns.
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "note", "type": "nominal"}
+      }
     }
   ]
 };

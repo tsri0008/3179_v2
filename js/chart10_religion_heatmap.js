@@ -78,6 +78,23 @@ var vg_10 = {
         // Text colour: white on the darkest squares (over 30%) so it can be read, otherwise dark.
         "color": {"condition": {"test": "datum.percent > 30", "value": "white"}, "value": "#2B2A28"}
       }
+    },
+    // Annotation 1
+    {
+      // "filter" keeps a row only if the test is true: Christianity x Southern & Eastern Europe, or No religion x North-East Asia.
+      "transform": [{"filter": "(datum.religion == 'Christianity' && datum.birthplace_region == 'Southern & Eastern Europe') || (datum.religion == 'No religion / secular beliefs' && datum.birthplace_region == 'North-East Asia')"}],
+      // A rectangle with no fill and a thick black border. It inherits x and y, so it lands exactly on the cell.
+      "mark": {"type": "rect", "fill": null, "stroke": "#111111", "strokeWidth": 3}
+    },
+    // Annotation 2
+    {
+      // One empty row of data, so one note.
+      "data": {"values": [{}]},
+      // The words of the note. Each piece in the list is one line.
+      "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 13, "color": "#3A3A3A",
+               "text": ["Black outlines:", "77.4% of people born in", "Southern & Eastern Europe", "are Christian, and 67.6% of", "people born in North-East", "Asia have no religion."]},
+      // Start 15 pixels to the right of the heatmap (its width is 470) and 10 pixels from the top.
+      "encoding": {"x": {"value": 570}, "y": {"value": 10}}
     }
   ]
 };

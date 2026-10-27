@@ -92,6 +92,22 @@ var vg_2 = {
       "mark": {"type": "text", "align": "left", "dx": 10},
       // The words to write come from the country column again.
       "encoding": {"text": {"field": "country_of_birth", "type": "nominal"}}
+    }, 
+    // LAYER 5: Annotation 
+    {
+      // "values" is a small table typed straight into the code. Each curly-bracket group is one row = one note.
+      // year "2025" + rank 1 is where India sits on the right-hand side. year "2025" + rank 8 is where Nepal sits.
+      // 2025 is in quotes because this chart's x axis treats years as labels (ordinal), and labels are text, not numbers.
+      "data": {"values": [
+        {"year": "2025", "rank": 1, "note": "India: 4th to 1st (+116%).\nIt now has more people than England."},
+        {"year": "2025", "rank": 8, "note": "Nepal: 31st to 8th (+326%),\n50,150 to 213,580 people."}
+      ]},
+      // A text mark. "align": "left" starts the note at the point; "dx": 70 pushes it 70 pixels right so it clears the country label.
+      // "lineBreak": "\n" turns each \n in the note into a new line, and "lineHeight" is the gap between lines in pixels.
+      "mark": {"type": "text", "align": "left", "dx": 70, "fontSize": 13, "lineBreak": "\n", "lineHeight": 15},
+      // "text" says which column holds the words. "color" is set to a fixed value because this layer would otherwise
+      // inherit the green/red/grey colouring the main chart uses, and our note rows do not have a "trend" column.
+      "encoding": {"text": {"field": "note", "type": "nominal"}, "color": {"value": "#3A3A3A"}}
     }
   ]
 };

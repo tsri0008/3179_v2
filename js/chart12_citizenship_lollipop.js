@@ -52,6 +52,33 @@ var vg_12 = {
       "mark": {"type": "text", "align": "left", "dx": 14},
       // The words come from the percentage column, with no decimals, e.g. 79.
       "encoding": {"text": {"field": "percent_citizen", "type": "quantitative", "format": ".0f"}}
+    },
+    // Annotation 1
+    {
+      // One row of data. It uses the chart's own column name (percent_citizen), so the line lands at 62.1 on the x axis.
+      "data": {"values": [{"percent_citizen": 62.1}]},
+      // A "rule" is a straight line. "strokeDash": [5, 4] makes it dashed (5 pixels line, 4 pixels gap).
+      "mark": {"type": "rule", "strokeDash": [5, 4], "strokeWidth": 1.5, "color": "#3A3A3A"},
+      // y = 0 to y2 = "height" makes the line run from the top to the bottom of the chart. (x is inherited: it is percent_citizen.)
+      "encoding": {"y": {"value": 0}, "y2": {"value": "height"}}
+    },
+    // Annotation 2
+    {
+      // Each row is one note: where it starts (pixels from the left and top) and what it says.
+      "data": {"values": [
+        {"px": 385, "py": 392, "note": "All overseas-born people: 62.1%"},
+        {"px": 385, "py": 330, "note": "Nepal-born people: only 21% are\ncitizens, the lowest of these 16 countries."}
+      ]},
+      // A text mark that starts at the left ("align": "left") and breaks lines wherever the note contains \n.
+      "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 13, "lineBreak": "\n", "lineHeight": 15},
+      // x and y come from the px and py columns, with "scale": null meaning "these are already pixels, do not stretch them".
+      // "color" is set to a fixed value because the chart's main colouring does not apply to a note.
+      "encoding": {
+        "x": {"field": "px", "type": "quantitative", "scale": null},
+        "y": {"field": "py", "type": "quantitative", "scale": null},
+        "text": {"field": "note", "type": "nominal"},
+        "color": {"value": "#3A3A3A"}
+      }
     }
   ]
 };
